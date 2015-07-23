@@ -16,7 +16,7 @@ def index():
 
 @app.route('/<path:resource>')
 def serve_static_resource(resource):
-    return send_from_directory('static_content/', resource)
+    return send_from_directory('static/', resource)
 
 
 @app.route('/query', methods=['GET', 'POST'])
