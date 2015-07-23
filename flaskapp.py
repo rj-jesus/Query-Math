@@ -1,7 +1,7 @@
 from urllib.parse import urlencode
 from urllib.request import urlopen
 
-from flask import Flask, request, send_from_directory
+from flask import Flask, render_template, request, send_from_directory
 
 app = Flask(__name__)
 
@@ -10,14 +10,13 @@ AppId = 'H2YK4X-8XX7QU8JR7'
 PodState = '*Step-by-step solution'
 
 
-@app.route('/static/')
+@app.route('/')
 def index():
-    print('ajsdgadasd')
-    return serve_static_resource('index.html')
+    return render_template('index.html')
 
 
 @app.route('/<path:resource>')
-def serve_static_resource(resource):
+def serveStaticResource(resource):
     return send_from_directory('static/', resource)
 
 
