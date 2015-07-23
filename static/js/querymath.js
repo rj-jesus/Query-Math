@@ -4,10 +4,10 @@ $(document).ready(function () {
         var input = $('#input-query').val();
         querymath(input);
     });
-    $('#input-query').keyup(function(event){
-        if(event.keyCode == 13) $('#btn-query').click();
+    $('#input-query').keyup(function (event) {
+        if (event.keyCode == 13) $('#btn-query').click();
     });
-    $('#btn-result').click(function() {
+    $('#btn-result').click(function () {
         $('#result-fix').hide();
         $('#result').hide();
     });
