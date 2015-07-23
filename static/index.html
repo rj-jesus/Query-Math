@@ -19,6 +19,8 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+    <!-- Mine -->
+    <link href="css/querymath.css" rel="stylesheet">
 </head>
 <!--/head-->
 
@@ -55,13 +57,15 @@
                 <h1>Query Math</h1>
 
                 <div class="gap"></div>
-                <div class="input-group" style="width: 75%; margin: 0 auto">
-                    <span class="input-group-addon" id="basic-addon">Query</span>
-                    <input id="input-query" type="text" class="form-control" placeholder="Integrate x dx"
-                           aria-describedby="basic-addon">
-                        <span class="input-group-btn">
-                            <button id="btn-query" class="btn btn-default" type="button">Go!</button>
-                        </span>
+                <div id="custom-search-input">
+                    <div class="input-group col-md-12">
+                        <input id="input-query" type="text" class="search-query form-control" placeholder="Integrate x dx"/>
+                                <span class="input-group-btn">
+                                    <button id="btn-query" class="btn btn-danger" type="button">
+                                        <span class=" glyphicon glyphicon-search"></span>
+                                    </button>
+                                </span>
+                    </div>
                 </div>
             </div>
         </div>
