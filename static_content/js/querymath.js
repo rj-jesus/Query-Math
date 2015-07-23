@@ -35,7 +35,7 @@ function querymath(query) {
         for(var i = 0; i < pod.length; i++){
             text += '<h3>' + pod[i].getAttribute('title') + '</h3>\n';
             img = pod[i].getElementsByTagName('img');
-            for(var j = 0; j < img.length; j++) text += '<img src=\"' + img[j].getAttribute('src') + '\" ' + 'alt=\"' + img[j].getAttribute('alt') + '\" />' + '\n';
+            for(var j = 0; j < img.length; j++) text += '<img src=\"' + img[j].getAttribute('src') + '\" ' + 'alt=\"' + img[j].getAttribute('alt') + '"><br>';
         }
         $('#result_text').html(text).show();
         $('#result').show();
