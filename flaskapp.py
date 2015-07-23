@@ -1,7 +1,7 @@
 from urllib.parse import urlencode
 from urllib.request import urlopen
 
-from flask import Flask, request, send_from_directory
+from flask import Flask, request
 
 app = Flask(__name__, static_url_path='')
 
@@ -13,17 +13,6 @@ PodState = '*Step-by-step solution'
 @app.route('/')
 def root():
     return app.send_static_file('index.html')
-
-
-# @app.route('/')
-# @app.route('/static/')
-# def index():
-#     return send_from_directory('static/', 'index.html')
-#
-#
-# @app.route('/<path:resource>')
-# def static_serving(resource):
-#     return send_from_directory('static/', resource)
 
 
 @app.route('/query', methods=['GET', 'POST'])
