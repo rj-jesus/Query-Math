@@ -29,9 +29,15 @@
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
-    color: #52B6EC;
+    color: #21a6d8;
 }
 
 .search-query:focus + button {
     z-index: 3;
+}
+
+#query-header{
+    background-color: #21a6d8;
+    text-decoration-color: #ffffff;
+    border-radius: 5px;
 }
