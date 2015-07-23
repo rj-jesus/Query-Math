@@ -19,276 +19,222 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
-</head><!--/head-->
+</head>
+<!--/head-->
 
 <body data-spy="scroll" data-target="#navbar" data-offset="0">
-    <header id="header" role="banner">
-        <div class="container">
-            <div id="navbar" class="navbar navbar-default">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="index.html"></a>
-                </div>
-                <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="#main-slider"><i class="icon-home"></i></a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#result">Portfolio</a></li>
-                        <li><a href="#pricing">Pricing</a></li>
-                        <li><a href="#about-us">About Us</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
+<header id="header" role="banner">
+    <div class="container">
+        <div id="navbar" class="navbar navbar-default">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"></a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#main-slider"><i class="icon-home"></i></a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#result">Portfolio</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#about-us">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
             </div>
         </div>
-    </header><!--/#header-->
+    </div>
+</header>
+<!--/#header-->
 
-    <section id="main-slider" class="carousel">
-        <div class="carousel-inner">
-            <div class="item active">
-                <div class="container">
-                    <h1>Query Math</h1>
-                    <div class="gap"></div>
-                    <div class="input-group" style="width: 75%; margin: 0 auto">
-                        <span class="input-group-addon" id="basic-addon">Query</span>
-                        <input id="input-query" type="text" class="form-control" placeholder="Integrate x dx" aria-describedby="basic-addon">
+<section id="main-slider" class="carousel">
+    <div class="carousel-inner">
+        <div class="item active">
+            <div class="container">
+                <h1>Query Math</h1>
+
+                <div class="gap"></div>
+                <div class="input-group" style="width: 75%; margin: 0 auto">
+                    <span class="input-group-addon" id="basic-addon">Query</span>
+                    <input id="input-query" type="text" class="form-control" placeholder="Integrate x dx"
+                           aria-describedby="basic-addon">
                         <span class="input-group-btn">
                             <button id="btn-query" class="btn btn-default" type="button">Go!</button>
                         </span>
-                    </div>
                 </div>
-            </div><!--/.item-->
-        </div><!--/.carousel-inner-->
-    </section><!--/#main-slider-->
-
-    <section id="result" style="text-align: center">
-        <div class="container">
-            <div class="box first">
-                <div class="center gap">
-                    <button id="btn-result" type="button" class="btn btn-primary" style="float: right">Hide</button>
-                </div>
-                <div id="result_text"></div>
-            </div><!--/.box-->
-        </div><!--/.container-->
-    </section><!--/#portfolio-->
-
-    <section id="services">
-        <div class="container">
-            <div class="box first">
-                <div class="center">
-                    <h2>Calculus Notes</h2>
-                    <p class="lead">Made with <span class="glyphicon glyphicon-heart"></span> and Mathematics.</p>
-                </div>
-                <div class="gap"></div>
-                <div class="row">
-                    <div class="col-sm-6">
-                        <h4 style="text-align: center">Calculus I Cheat Sheet</h4>
-                        <p style="text-align: center">Derivatives + Integrals</p>
-                        <a href='pdf/Calculus1_Pt.pdf'><img class="img-responsive img-thumbnail" src="pdf/C1Pt.png" alt="" ></a>
-                    </div>
-                    <div class="col-sm-6">
-                        <h4 style="text-align: center">Calculus II Cheat Sheet</h4>
-                        <p style="text-align: center">ODEs + Series</p>
-                        <a href='pdf/Calculus2_Pt.pdf'><img class="img-responsive img-thumbnail" src="pdf/C2Pt.png" alt="" ></a>
-                    </div>
-                </div><!--/.row-->
-            </div><!--/.box-->
-        </div><!--/.container-->
-    </section><!--/#services-->
-
-    <section id="pricing">
-        <div class="container">
-            <div class="box">
-                <div class="center">
-                    <h2>About</h2>
-                </div><!--/.center-->
-                <div class="row">
-                    <div class="col-sm-6" style="text-align: center">
-                        <h4 style="text-align: center">The Query Service</h4>
-                        <p style="text-align: center">
-                            The query service offered here is only possible due to <a href="http://www.wolframalpha.com/">Wolfram|Alpha</a>'s
-                            awesome API and their excellent CAS. They offer 2000 queries per month free of charge (for as long
-                            as it's for personal or non-commercial use). Thanks so much for making this project possible.<br>
-                            I would also like to thank to <a href="https://www.openshift.com/">OpenShift</a> for hosting a Public PaaS,
-                            where I'm thus capable of housing this page and it's server side interface for free.<br>
-                            To whoever wants to help improving this project and making it grow, the source code will soon be on GitHub where you'll be able
-                            to fork it and issue pull requests.
-                        </p>
-                        <a>Link to the project on GitHub not yet available.</a>
-                    </div>
-                    <div class="col-sm-6" style="text-align: center">
-                        <h4 style="text-align: center">The Cheat Sheets</h4>
-                        <p style="text-align: center">
-                            The Cheat Sheets were a personal project I worked on during my first year at <a href="https://www.ua.pt/">University of Aveiro</a>(Universidade de Aveiro).
-                            There are two, one from each semester. I wrote the LaTeX source for them, but obviously the contents
-                            came from lots of different places. Thus I guess I can't give credit to everyone who somehow contributed to them.
-                            Still, I would like to thank my professor (of both semesters) who always showed interest and availability
-                            to check the pages and even help me writing them. Thanks prof.ª Vera Kharlamova. I would also thank all my colleagues
-                            who helped me fix the many typos I committed.<br>
-                            I'm currently in the process of translating both sheets to english, and considering if I should
-                            work on the Calculus III Cheat Sheet in the future.<br>
-                            Feel free to help the project grow by forking it and issuing pull requests.
-                        </p>
-                        <a href="https://github.com/RJ-Jesus/Calculus-Cheat-Sheet">Fork me on GitHub</a>
-                    </div>
-                </div><!--/.row-->
             </div>
         </div>
-    </section><!--/#pricing-->
+        <!--/.item-->
+    </div>
+    <!--/.carousel-inner-->
+</section>
 
-    <section id="contact">
-        <div class="container">
-            <div class="box last">
-                <div class="center">
-                    <h2>Contacts</h2>
-                </div>
-                <div class="gap"></div>
-                <div id="team-scroller" class="carousel scale">
-                    <div class="carousel-inner">
-                        <div class="item active">
-                            <div class="row">
-                                <div class="col-sm-4">
-                                    <div class="member">
-                                        <p><img class="img-responsive img-thumbnail img-circle" src="images/team1.jpg" alt="" ></p>
-                                        <h3>Agnes Smith<small class="designation">CEO &amp; Founder</small></h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="row">
-                                <div class="col-sm-4">
-                                    <div class="member">
-                                        <p><img class="img-responsive img-thumbnail img-circle" src="images/team3.jpg" alt="" ></p>
-                                        <h3>David Robbins<small class="designation">Co-Founder</small></h3>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4">
-                                    <div class="member">
-                                        <p><img class="img-responsive img-thumbnail img-circle" src="images/team1.jpg" alt="" ></p>
-                                        <h3>Philip Mejia<small class="designation">Marketing Manager</small></h3>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4">
-                                    <div class="member">
-                                        <p><img class="img-responsive img-thumbnail img-circle" src="images/team2.jpg" alt="" ></p>
-                                        <h3>Charles Erickson<small class="designation">Support Manager</small></h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <a class="left-arrow" href="#team-scroller" data-slide="prev">
-                        <i class="icon-angle-left icon-4x"></i>
-                    </a>
-                    <a class="right-arrow" href="#team-scroller" data-slide="next">
-                        <i class="icon-angle-right icon-4x"></i>
-                    </a>
-                </div><!--/.carousel-->
-            </div><!--/.box-->
-        </div><!--/.container-->
-    </section><!--/#about-us-->
+<section id="result" style="text-align: center">
+    <div class="container">
+        <div class="box first">
+            <div class="center gap">
+                <button id="btn-result" type="button" class="btn btn-primary" style="float: right">Hide</button>
+            </div>
+            <div id="result_text"></div>
+        </div>
+        <!--/.box-->
+    </div>
+    <!--/.container-->
+</section>
 
-    <section id="contact">
-        <div class="container">
-            <div class="box last">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <h1>Contact Form</h1>
-                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-                        <div class="status alert alert-success" style="display: none"></div>
-                        <form id="main-contact-form" class="contact-form" name="contact-form" method="post" action="sendemail.php" role="form">
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" required="required" placeholder="Name">
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" required="required" placeholder="Email address">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <div class="form-group">
-                                        <textarea name="message" id="message" required="required" class="form-control" rows="8" placeholder="Message"></textarea>
-                                    </div>
-                                    <div class="form-group">
-                                        <button type="submit" class="btn btn-danger btn-lg">Send Message</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div><!--/.col-sm-6-->
-                    <div class="col-sm-6">
-                        <h1>Our Address</h1>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <address>
-                                    <strong>Twitter, Inc.</strong><br>
-                                    795 Folsom Ave, Suite 600<br>
-                                    San Francisco, CA 94107<br>
-                                    <abbr title="Phone">P:</abbr> (123) 456-7890
-                                </address>
-                            </div>
-                            <div class="col-md-6">
-                                <address>
-                                    <strong>Twitter, Inc.</strong><br>
-                                    795 Folsom Ave, Suite 600<br>
-                                    San Francisco, CA 94107<br>
-                                    <abbr title="Phone">P:</abbr> (123) 456-7890
-                                </address>
-                            </div>
-                        </div>
-                        <h1>Connect with us</h1>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <ul class="social">
-                                    <li><a href="#"><i class="icon-facebook icon-social"></i> Facebook</a></li>
-                                    <li><a href="#"><i class="icon-google-plus icon-social"></i> Google Plus</a></li>
-                                    <li><a href="#"><i class="icon-pinterest icon-social"></i> Pinterest</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-md-6">
-                                <ul class="social">
-                                    <li><a href="#"><i class="icon-linkedin icon-social"></i> Linkedin</a></li>
-                                    <li><a href="#"><i class="icon-twitter icon-social"></i> Twitter</a></li>
-                                    <li><a href="#"><i class="icon-youtube icon-social"></i> Youtube</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div><!--/.col-sm-6-->
-                </div><!--/.row-->
-            </div><!--/.box-->
-        </div><!--/.container-->
-    </section><!--/#contact-->
+<section id="services">
+    <div class="container">
+        <div class="box first">
+            <div class="center">
+                <h2>Calculus Notes</h2>
 
-    <footer id="footer">
-        <div class="container">
+                <p class="lead">Made with <span class="glyphicon glyphicon-heart"></span> and Mathematics.</p>
+            </div>
+            <div class="gap"></div>
             <div class="row">
                 <div class="col-sm-6">
-                    &copy; 2013 <a target="_blank" href="http://shapebootstrap.net/" title="Free Twitter Bootstrap WordPress Themes and HTML templates">ShapeBootstrap</a>. All Rights Reserved.
+                    <h4 style="text-align: center">Calculus I Cheat Sheet</h4>
+
+                    <p style="text-align: center">Derivatives + Integrals</p>
+                    <a href='pdf/Calculus1_Pt.pdf'><img class="img-responsive img-thumbnail" src="pdf/C1Pt.png" alt=""></a>
                 </div>
                 <div class="col-sm-6">
-                    <img class="pull-right" src="images/shapebootstrap.png" alt="ShapeBootstrap" title="ShapeBootstrap">
+                    <h4 style="text-align: center">Calculus II Cheat Sheet</h4>
+
+                    <p style="text-align: center">ODEs + Series</p>
+                    <a href='pdf/Calculus2_Pt.pdf'><img class="img-responsive img-thumbnail" src="pdf/C2Pt.png" alt=""></a>
                 </div>
             </div>
+            <!--/.row-->
         </div>
-    </footer><!--/#footer-->
+        <!--/.box-->
+    </div>
+    <!--/.container-->
+</section>
+<!--/#services-->
 
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.isotope.min.js"></script>
-    <script src="js/jquery.prettyPhoto.js"></script>
-    <script src="js/main.js"></script>
-    <!-- Mine -->
-    <script src="js/querymath.js"></script>
+<section id="pricing">
+    <div class="container">
+        <div class="box">
+            <div class="center">
+                <h2>About</h2>
+            </div>
+            <!--/.center-->
+            <div class="row">
+                <div class="col-sm-6" style="text-align: center">
+                    <h4 style="text-align: center">The Query Service</h4>
+
+                    <p style="text-align: center">
+                        The query service offered here is only possible due to <a href="http://www.wolframalpha.com/">Wolfram|Alpha</a>'s
+                        awesome API and their excellent CAS. They offer 2000 queries per month free of charge (for as
+                        long
+                        as it's for personal or non-commercial use). Thanks so much for making this project
+                        possible.<br>
+                        I would also like to thank to <a href="https://www.openshift.com/">OpenShift</a> for hosting a
+                        Public PaaS,
+                        where I'm thus capable of housing this page and it's server side interface for free.<br>
+                        To whoever wants to help improving this project and making it grow, the source code will soon be
+                        on GitHub where you'll be able
+                        to fork it and issue pull requests.
+                    </p>
+                    <a>Link to the project on GitHub not yet available.</a>
+                </div>
+                <div class="col-sm-6" style="text-align: center">
+                    <h4 style="text-align: center">The Cheat Sheets</h4>
+
+                    <p style="text-align: center">
+                        The Cheat Sheets were a personal project I worked on during my first year at <a
+                            href="https://www.ua.pt/">University of Aveiro</a>(Universidade de Aveiro).
+                        There are two, one from each semester. I wrote the LaTeX source for them, but obviously the
+                        contents
+                        came from lots of different places. Thus I guess I can't give credit to everyone who somehow
+                        contributed to them.
+                        Still, I would like to thank my professor (of both semesters) who always showed interest and
+                        availability
+                        to check the pages and even help me writing them. Thanks prof.ª Vera Kharlamova. I would also
+                        thank all my colleagues
+                        who helped me fix the many typos I committed.<br>
+                        I'm currently in the process of translating both sheets to english, and considering if I should
+                        work on the Calculus III Cheat Sheet in the future.<br>
+                        Feel free to help the project grow by forking it and issuing pull requests.
+                    </p>
+                    <a href="https://github.com/RJ-Jesus/Calculus-Cheat-Sheet">Fork me on GitHub</a>
+                </div>
+            </div>
+            <!--/.row-->
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="container">
+        <div class="box last">
+            <div class="center">
+                <h2>Contacts &amp; Small Bio</h2>
+            </div>
+            <div class="gap"></div>
+            <div id="team-scroller" class="carousel scale">
+                <div class="carousel-inner">
+                    <div class="col-sm-4">
+                        <div class="member">
+                            <p><img class="img-responsive img-thumbnail img-circle" src="images/11319180.jpeg" alt="">
+                            </p>
+
+                            <h3>Ricardo Jesus
+                                <small class="designation">Main developer</small>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        I'm currently a student of the <a href="https://www.ua.pt/">University of Aveiro</a>
+                        (Universidade de Aveiro)
+                        taking Computer and Telematics Engineering, currently (2015) on my second year.<br>
+                        I enjoy (a lot) working with algorithms and low level programming languages. I've also a deep
+                        interest on
+                        Mathematics, which I intend to take a degree at after completing my current course.<br>
+                        This project was born from joining two smaller projects I'd worked during the last academic
+                        year, my Calculus
+                        Cheat Sheets and a <a href="http://www.wolframalpha.com/">Wolfram|Alpha</a> query service.
+                        <div class="gap"></div>
+                        <div style="text-align: center">
+                            <ul class="social">
+                                <li><a href="https://github.com/RJ-Jesus"><i class="icon-github-alt icon-social"></i>
+                                    GitHub</a></li>
+                                <li><a href="https://plus.google.com/u/0/117581536778364267885/posts"><i
+                                        class="icon-google-plus icon-social"></i> Google Plus</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/.carousel-->
+        </div>
+        <!--/.box-->
+    </div>
+    <!--/.container-->
+</section>
+
+<footer id="footer">
+    <div class="container">
+        <div class="row center">
+            &copy; 2015 <a target="_blank" href=""
+                           title="RJ-Jesus">Ricardo Jesus</a>.
+            All Rights Reserved.
+
+        </div>
+    </div>
+</footer>
+<!--/#footer-->
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.isotope.min.js"></script>
+<script src="js/jquery.prettyPhoto.js"></script>
+<script src="js/main.js"></script>
+<!-- Mine -->
+<script src="js/querymath.js"></script>
 </body>
 </html>
