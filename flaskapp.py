@@ -10,13 +10,14 @@ AppId = 'H2YK4X-8XX7QU8JR7'
 PodState = '*Step-by-step solution'
 
 
-@app.route('/')
+@app.route('/static/')
 def index():
-    return render_template('index.html')
+    return send_from_directory('static', 'index.html')
 
 
 @app.route('/<path:resource>')
 def serveStaticResource(resource):
+    print(resource)
     return send_from_directory('static/', resource)
 
 
@@ -24,10 +25,7 @@ def serveStaticResource(resource):
 def query():
     # Accepting both GET and POST
     query_input = request.values.get('input')
-    xml = get(query_input)
-    # Might implement the parse on the client side
-    html = xml
-    return html
+    return get(query_input)
 
 
 def get(text):
