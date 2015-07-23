@@ -10,9 +10,14 @@ AppId = 'H2YK4X-8XX7QU8JR7'
 PodState = '*Step-by-step solution'
 
 
-@app.route('/static/')
+@app.route('/')
 def index():
-    return send_from_directory('static', 'index.html')
+    return send_from_directory('static/', 'index.html')
+
+
+@app.route('/static/')
+def index2():
+    return send_from_directory('static/', 'index.html')
 
 
 @app.route('/<path:resource>')
