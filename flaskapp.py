@@ -1,6 +1,7 @@
-from flask import Flask, request, flash, url_for, redirect, render_template, abort, send_from_directory
 from urllib.parse import urlencode
 from urllib.request import urlopen
+
+from flask import Flask, request, send_from_directory
 
 app = Flask(__name__)
 
@@ -9,8 +10,9 @@ AppId = 'H2YK4X-8XX7QU8JR7'
 PodState = '*Step-by-step solution'
 
 
-@app.route('/')
+@app.route('/static/')
 def index():
+    print('ajsdgadasd')
     return serve_static_resource('index.html')
 
 
