@@ -3,7 +3,7 @@ from urllib.request import urlopen
 
 from flask import Flask, request, send_from_directory
 
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='')
 
 BaseURL = 'http://api.wolframalpha.com/v2/query?'
 AppId = 'H2YK4X-8XX7QU8JR7'
@@ -11,18 +11,19 @@ PodState = '*Step-by-step solution'
 
 
 @app.route('/')
-def index():
-    return send_from_directory('static/', 'index.html')
+def root():
+    return app.send_static_file('index.html')
 
 
-@app.route('/static/')
-def index2():
-    return send_from_directory('static/', 'index.html')
-
-
-@app.route('/<path:resource>')
-def static_serving(resource):
-    return send_from_directory('static/', resource)
+# @app.route('/')
+# @app.route('/static/')
+# def index():
+#     return send_from_directory('static/', 'index.html')
+#
+#
+# @app.route('/<path:resource>')
+# def static_serving(resource):
+#     return send_from_directory('static/', resource)
 
 
 @app.route('/query', methods=['GET', 'POST'])
