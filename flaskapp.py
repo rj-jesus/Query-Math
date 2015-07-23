@@ -16,8 +16,7 @@ def index():
 
 
 @app.route('/<path:resource>')
-def static(resource):
-    print(resource)
+def static_serving(resource):
     return send_from_directory('static/', resource)
 
 
