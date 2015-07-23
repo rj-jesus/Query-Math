@@ -1,7 +1,7 @@
 from urllib.parse import urlencode
 from urllib.request import urlopen
 
-from flask import Flask, render_template, request, send_from_directory
+from flask import Flask, request, send_from_directory
 
 app = Flask(__name__)
 
@@ -16,7 +16,7 @@ def index():
 
 
 @app.route('/<path:resource>')
-def serveStaticResource(resource):
+def static(resource):
     print(resource)
     return send_from_directory('static/', resource)
 

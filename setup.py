@@ -5,6 +5,6 @@ setup(name='querymath',
       description='Query Math | Calculus Resources',
       author='Ricardo Jesus',
       author_email='rj.bcjesus@gmail.com',
-      url='http://www.python.org/sigs/distutils-sig/',
+      url='http://rj-jesus.me',
       install_requires=['Flask>=0.10.1'],
       )
